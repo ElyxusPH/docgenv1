@@ -1,7 +1,7 @@
 > **Python Tool to Easily Generate Multiple Documents**
 
 
-- Running the script doestn require internet
+- Running the script doesn't require internet
 - Max Generation is set to 10k to avoid lagging/crashing
 - Random words are joined and enhance by NLTK package to ensure high quality content
 - You can upload this documents at CourseHero for Free Unlocks
@@ -20,11 +20,11 @@ $ python --version
 
 #### For Termux
 
-To use the bomber type the following commands in Termux:
+To Run the Script, Type the following in Termux:
 ```shell script
 pkg install git -y 
 pkg install python -y 
-git clone https://github.com/ElyxusPH
+git clone https://github.com/ElyxusPH/Document-Gen.git
 cd ElyxusPH
 pip install -r requirements.txt
 python3 main.py
