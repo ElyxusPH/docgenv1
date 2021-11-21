@@ -26,6 +26,7 @@ pkg install git -y
 pkg install python -y 
 git clone https://github.com/ElyxusPH/Document-Gen.git
 cd Document-Gen
+pkg install build-essential
 pip install -r requirements.txt
 python3 main.py
 ```
