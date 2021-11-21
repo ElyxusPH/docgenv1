@@ -1,10 +1,11 @@
 from nltk.corpus import stopwords
 import random, sys, time, logging
-import argparse, pathlib, os
+import pathlib, os, nltk
 from colorama import Fore, Back, Style
 from pathlib import Path
 from os import system, name
 from urllib.request import urlopen
+nltk.download('stopwords') 
 
 def lent(self, str):
     counter = 0
@@ -42,6 +43,7 @@ class generate:
             logging.info('Generating Directory')
             os.makedirs(self.newpath)
         self.dir = self.newpath
+
 
         self.__main__()
     
@@ -136,20 +138,17 @@ def loader():
         print(Style.RESET_ALL + '[+] Program Exited')
         exit()
 
-        
-	
-
-print()
 if __name__ == '__main__':
     clear()
-    loader()
-    val = input('\n[+] Amount of Doc to Gen: ')
-    if not isinstance(val, int):
+    try:
+        val = input('\n[+] Amount of Doc to Gen: ')
         try:
-            generate(int(val))
-        except KeyboardInterrupt:
+            value = int(val)
+            if isinstance(value, int):
+                generate(int(val))
+        except ValueError:
+            print('Enter a Valid Number!')
+            exit()
+    except KeyboardInterrupt:
             print(Style.RESET_ALL + '[+] Program Exited')
-    else:
-        print('Enter a Valid Number!')
-    
-
+		
