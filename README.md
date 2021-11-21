@@ -32,6 +32,6 @@ python3 main.py
 
 ### Contact
 
-For Queries: [Telegram Acc](https://t.me/ElyxusPH)  
+For Queries: [Telegram Profile](https://t.me/ElyxusPH)  
 Contributions, issues, and feature requests are welcome!  
 Give a ★ if you like this project!
