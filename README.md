@@ -25,7 +25,7 @@ To Run the Script, Type the following in Termux:
 pkg install git -y 
 pkg install python -y 
 git clone https://github.com/ElyxusPH/Document-Gen.git
-cd ElyxusPH
+cd Document-Gen
 pip install -r requirements.txt
 python3 main.py
 ```
