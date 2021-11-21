@@ -140,6 +140,7 @@ def loader():
 
 if __name__ == '__main__':
     clear()
+    loader()
     try:
         val = input('\n[+] Amount of Doc to Gen: ')
         try:
