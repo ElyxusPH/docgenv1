@@ -54,7 +54,7 @@ class generate:
         logging.info('Loading Wordlist')
 
         self.word_list = []
-        dir = r'%s\word-list-1.txt'%self.cdir
+        dir = 'word-list-1.txt'
 
         for words in open(dir, 'r'):
             if len(words) >= 6:
